@@ -1,0 +1,3 @@
+[submodule "DemoGraphQlDocumentation"]
+	path = DemoGraphQlDocumentation
+	url = https://github.com/cadereynoldson/DemoGraphQlDocumentation
