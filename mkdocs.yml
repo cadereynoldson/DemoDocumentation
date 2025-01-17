@@ -3,8 +3,23 @@ nav:
   - Home: "index.md"
   - Services: 
     - GraphQL API: "!include ./DemoGraphQlDocumentation/mkdocs.yml"
+    - REST API: "!include ./DemoOpenAPIDocumentation/mkdocs.yml"
+    - Python Library: "!include ./DemoPythonDocumentation/mkdocs.yml"
 
 plugins:
+  - search
   - monorepo
+  - neoteroi.mkdocsoad:
+      use_pymdownx: true
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: sphinx 
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 
 theme: cinder

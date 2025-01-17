@@ -1,3 +1,9 @@
 [submodule "DemoGraphQlDocumentation"]
 	path = DemoGraphQlDocumentation
 	url = https://github.com/cadereynoldson/DemoGraphQlDocumentation
+[submodule "DemoOpenAPIDocumentation"]
+	path = DemoOpenAPIDocumentation
+	url = https://github.com/cadereynoldson/DemoOpenAPIDocumentation.git
+[submodule "DemoPythonDocumentation"]
+	path = DemoPythonDocumentation
+	url = https://github.com/cadereynoldson/DemoPythonDocumentation.git
