@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
-      - name: Checkout Repository with Submodules
+      - name: Checkout Repository
         uses: actions/checkout@v4
-        # with:
-        #   submodules: true
-        #   token: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          submodules: true
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -29,5 +29,5 @@ jobs:
           python -m pip install -r DemoMkdocsPython/docs/requirements.txt
           python -m pip install DemoMkdocsPython/src/example_module
 
-      -name: Build GH Pages
+      - name: Build GH Pages
        run: mkdocs gh-deploy --force --config-file ./mkdocs.yml
