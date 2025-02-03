@@ -21,13 +21,13 @@ jobs:
         with:
           python-version: 3.8
 
-      - name: Install Mkdocs Dependencies
+      - name: Install Dependencies
         run: |
           python -m pip install -r docs/requirements.txt
           python -m pip install -r DemoMkdocsGraphQl/docs/requirements.txt
           python -m pip install -r DemoMkdocsOpenAPI/docs/requirements.txt
           python -m pip install -r DemoMkdocsPython/docs/requirements.txt
-          python -m pip install DemoMkdocsPython/src/example_module
+          python -m pip install -e DemoMkdocsPython/src/example_module
 
       - name: Build GH Pages
         run: mkdocs gh-deploy --force --config-file ./mkdocs.yml
