@@ -12,9 +12,9 @@ jobs:
     steps:
       - name: Checkout Repository with Submodules
         uses: actions/checkout@v4
-        with:
-          submodules: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+        # with:
+        #   submodules: true
+        #   token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Python
         uses: actions/setup-python@v5
