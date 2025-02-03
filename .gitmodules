@@ -1,0 +1,9 @@
+[submodule "DemoMkdocsPython"]
+	path = DemoMkdocsPython
+	url = https://github.com/AllenInstitute/DemoMkdocsPython.git
+[submodule "DemoMkdocsGraphQl"]
+	path = DemoMkdocsGraphQl
+	url = https://github.com/AllenInstitute/DemoMkdocsGraphQl.git
+[submodule "DemoMkdocsOpenAPI"]
+	path = DemoMkdocsOpenAPI
+	url = https://github.com/AllenInstitute/DemoMkdocsOpenAPI.git
