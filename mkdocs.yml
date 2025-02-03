@@ -1,10 +1,12 @@
-site_name: Cade's Documentation
+site_name: Demo Mkdocs Site
+repo_url: https://github.com/AllenInstitute/DemoMkdocsSite/
+site_url: https://demo_mkdocssite.alleninstitute.github.io/
 nav: 
   - Home: "index.md"
   - Services: 
-    - GraphQL API: "!include ./DemoGraphQlDocumentation/mkdocs.yml"
-    - REST API: "!include ./DemoOpenAPIDocumentation/mkdocs.yml"
-    - Python Library: "!include ./DemoPythonDocumentation/mkdocs.yml"
+    - GraphQL API: "!include ./DemoMkdocsGraphQl/mkdocs.yml"
+    - REST API: "!include ./DemoMkdocsOpenAPI/mkdocs.yml"
+    - Python Library: "!include ./DemoMkdocsPython/mkdocs.yml"
 
 plugins:
   - search
@@ -22,4 +24,4 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
 
-theme: cinder
+theme: material
