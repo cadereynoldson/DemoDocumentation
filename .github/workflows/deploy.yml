@@ -30,4 +30,4 @@ jobs:
           python -m pip install DemoMkdocsPython/src/example_module
 
       - name: Build GH Pages
-       run: mkdocs gh-deploy --force --config-file ./mkdocs.yml
+        run: mkdocs gh-deploy --force --config-file ./mkdocs.yml
